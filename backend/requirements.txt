@@ -1,0 +1,31 @@
+# AI Voice Assistant for Agricultural Services - Dependencies
+# Only includes packages that are actually imported and used in the codebase
+
+# Core LiveKit and AI dependencies (used in agent.py and api.py)
+livekit>=1.0.12
+livekit-agents>=1.2.1
+livekit-plugins-google>=1.2.1
+livekit-plugins-noise-cancellation>=0.2.5
+
+# Google AI services (used in agent.py for Google Gemini integration - alternative option)
+google-genai>=1.26.0
+
+# Database - MongoDB (used in db_driver.py)
+pymongo>=4.6.0
+
+# # Flask server dependencies (used in server.py for audio-only functionality)
+# flask>=3.0.0          # Web framework for audio processing endpoints
+# flask-cors>=4.0.0     # Cross-origin resource sharing for frontend integration
+
+# Utility Libraries (used across multiple files)
+python-dotenv>=1.0.0  # Used in agent.py, db_driver.py, price_checker.py
+requests>=2.31.0      # Used in api.py and price_checker.py
+urllib3>=2.0.0        # Used in price_checker.py for SSL warnings
+
+# # Flask and Uvicorn for API
+# flask[async]
+# flask
+# flask-cors
+# uvicorn
+
+
